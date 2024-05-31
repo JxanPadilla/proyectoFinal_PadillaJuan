@@ -86,8 +86,8 @@ export const CamiAdmin = () => {
                             ¿Estas seguro de eliminar la camisa {objCami.marca} con ID: {objCami.codCamisas}? 
                         </Modal.Body>
                         <Modal.Footer>
-                            <Button variant="secondary" onClick={(e)=>{setShow(false);}}>Cancelar</Button>
-                            <Button variant="danger" onClick={(e)=>{eliminarCamisa(objCami.codCamisas);}}>Eliminar</Button>
+                            <Button variant="secondary" onClick={(e)=>{ e.preventDefault(); setShow(false);}}>Cancelar</Button>
+                            <Button variant="danger" onClick={(e)=>{e.preventDefault(); eliminarCamisa(objCami.codCamisas);}}>Eliminar</Button>
                         </Modal.Footer>
                     </Modal>
                 </div>

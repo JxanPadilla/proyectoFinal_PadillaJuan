@@ -5,7 +5,7 @@ import { camisaTalla } from "../../modelos/CamisaTalla";
 import { ARREGLO_CAMISA_TALLA } from "../../utilidades/dominios/DomTalla";
 import { useFormulario } from "../../utilidades/misHooks/useFormulario";
 import { camisa } from "../../modelos/Camisa";
-import { useNavigate, useNavigation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { ARREGLO_CAMISA } from "../../mocks/Camisas-mocks";
 import { ConvertirBase64 } from "../../utilidades/funciones/ConvertirBase64";
 
